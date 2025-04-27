@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
+* {
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .text-gradient-purple {
-    @apply bg-gradient-to-r from-blue-400  to-purple-700 inline-block text-transparent bg-clip-text 
+    @apply bg-gradient-to-r from-blue-300  to-purple-600  text-transparent bg-clip-text
+  }
+
+  .icons-hero {
+    @apply text-3xl hover:scale-125 transition-transform opacity-35 hover:opacity-100
   }
 }
