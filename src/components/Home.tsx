@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { FaReact } from 'react-icons/fa';
 import {
   FaCss3Alt,
@@ -7,19 +7,30 @@ import {
   FaNodeJs,
   FaSquareJs,
 } from 'react-icons/fa6';
+import Typed from 'typed.js';
+
 
 function Home() {
-  const [name, setName] = useState<string>('Goku');
+  const el = useRef(null);
 
-  setTimeout(() => {
-    setName('Thiago');
-  }, 2000);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Goku', 'Thiago'],
+      typeSpeed: 50,
+      backSpeed: 50
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <div className="container flex justify-evenly items-center min-h-screen" id='home'>
       <div className="flex flex-col w-1/3 gap-6">
         <h2 className="font-extrabold text-5xl text-gray-300">
-          Oi, eu sou o <span className="text-gradient-purple ">{name}</span>
+          Oi, eu sou o <span className="text-gradient-purple " id='element' ref={el}></span>
         </h2>
         <p className="text-lg font-semibold text-gray-400">
           Sou um dev fullstack que adora transformar boas ideias em projetos que
