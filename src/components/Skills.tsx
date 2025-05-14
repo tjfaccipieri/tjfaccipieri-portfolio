@@ -3,14 +3,18 @@ import { FaSquareJs } from 'react-icons/fa6';
 
 function Skills() {
   return (
-    <div className="min-h-screen pt-20" id="skills">
-      <div className="flex flex-col gap-10">
-        <FaNodeJs className="icons-hero text-[#50fa7b]" />
-        <FaReact className="icons-hero text-[#8be9fd]" />
-        <FaJava className="icons-hero text-[#bd93f9]" />
-        <FaSquareJs className="icons-hero text-[#f1fa8c]" />
-        <FaHtml5 className="icons-hero text-[#ff5555]" />
-        <FaCss3Alt className="icons-hero text-[#8be9fd]" />
+    <div className="min-h-screen pt-20 flex flex-col justify-center" id="skills">
+      <div className="flex justify-center gap-10">
+        <div className="w-2/8 bg-red-500">
+          121
+        </div>
+        <div className="w-2/8 bg-red-500">
+          121
+        </div>
+        <div className="w-2/8 bg-red-500">
+          121
+        </div>
+        
       </div>
     </div>
   );
