@@ -37,7 +37,7 @@ function Home() {
           Sou um dev fullstack que adora transformar boas ideias em projetos que
           realmente fazem a diferença. Com React no front, backend afiado e
           muita paixão por tecnologia, estou sempre criando algo novo. Aqui você
-          vai ver um pouco do que eu já aprontei — e o que ainda está por vir.
+          vai ver um pouco do que eu já aprontei — e o que ainda está por vir. <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Disguised%20Face.png" className='inline' alt="Disguised Face" width="25" height="25" />
         </p>
       </div>
       <div className="flex flex-col w-1/3 items-center gap-6">
