@@ -1,4 +1,4 @@
-import { FaNodeJs, FaServer } from 'react-icons/fa';
+import { FaBuilding, FaNodeJs, FaServer } from 'react-icons/fa';
 import { GrDeploy } from 'react-icons/gr';
 import { PiMonitorPlayFill, PiNetworkFill } from 'react-icons/pi';
 import {
@@ -8,9 +8,9 @@ import {
   SiReact,
   SiSpring,
 } from 'react-icons/si';
-import patoback from '../assets/ChatGPT Image 14 de jul. de 2025, 16_57_18.png'
-import patofront from '../assets/patofront.png'
-import patoinfra from '../assets/patoinfra.png'
+import patoback from '../assets/patoback.png';
+import patofront from '../assets/patofront.png';
+import patoinfra from '../assets/patoinfra.png';
 
 function Skills() {
   return (
@@ -38,7 +38,7 @@ function Skills() {
                 Python | Django | Flask
               </li>
             </ul>
-            <img src={patoback} alt="" className='h-72' />
+            <img src={patoback} alt="" className="h-72" />
           </div>
         </div>
 
@@ -47,7 +47,7 @@ function Skills() {
             <PiMonitorPlayFill />
             Frontend
           </p>
-          <div className=" border-2 border-sky-300 bg-sky-800/40 px-4 py-2 flex gap-2 items-center justify-around">
+          <div className="border-2 border-sky-300 bg-sky-800/40 px-4 py-2 flex gap-2 items-center justify-around">
             <ul className="flex flex-col gap-2 text-2xl items-center font-semibold text-sky-500">
               <li className=" flex items-center gap-2">
                 <SiHtml5 /> HTML | CSS | JavaScript
@@ -59,13 +59,13 @@ function Skills() {
                 <SiReact /> Tailwind | Bootstrap | MaterialUI
               </li>
             </ul>
-            <img src={patofront} alt="" className='h-72' />
+            <img src={patofront} alt="" className="h-72" />
           </div>
         </div>
 
         <div className="w-4/9 ml-16 -mt-16">
-          <p className="uppercase text-xl font-bold p-2 rounded-t-xl bg-red-300 text-red-950 flex justify-center items-center gap-4">
-            <PiMonitorPlayFill />
+          <p className="uppercase text-3xl font-bold p-2 rounded-t-xl bg-red-300 text-red-950 flex justify-center items-center gap-4">
+            <FaBuilding />
             InfraEstrutura
           </p>
           <div className=" border-2 border-red-300 bg-red-900/40 px-4 py-2 flex gap-2 items-center justify-around">
@@ -80,7 +80,7 @@ function Skills() {
                 <GrDeploy /> CI/CD
               </li>
             </ul>
-            <img src={patoinfra} alt="" className='h-72' />
+            <img src={patoinfra} alt="" className="h-72" />
           </div>
         </div>
       </div>
