@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Sobre from './components/Sobre';
 import Skills from './components/Skills';
+import Contato from './components/Contato';
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
         <Navbar />
           <div>
             <Home />
-            <Sobre />
+            <Sobre />            
             <Skills />
+            <Contato />
           </div>
       </div>
     </BrowserRouter>
