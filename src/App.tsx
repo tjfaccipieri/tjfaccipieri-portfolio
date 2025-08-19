@@ -1,9 +1,9 @@
-import { BrowserRouter } from 'react-router-dom';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Sobre from './components/Sobre';
-import Skills from './components/Skills';
-import Contato from './components/Contato';
+import { BrowserRouter } from "react-router-dom";
+import Contato from "./components/Contato";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
+import Sobre from "./components/Sobre";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Navbar />
           <div>
             <Home />
-            <Sobre />            
+            <Sobre />
             <Skills />
             <Contato />
           </div>
